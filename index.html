@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web sobre Inteligencia Artificial - IES Condesa Eylo</title>
+    
+    <link href="icono.png" rel="icon" type="image/png">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="animacion.css" rel="stylesheet" type="text/css">
+    
+    <script src="processing.js"></script>
+    <script type="text/processing" data-processing-target="pjsCanvas">
+    void setup(){
+        size(280,70);
+        background(#2E4683);
+        textSize(50);
+    }
+    void draw(){
+        background(#2E4683);
+        int h = hour();
+        int m = minute();
+        int s = second();
+        text(h + ":" + nf(m,2) + ":" + nf(s,2), 30, 50);
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div id="html">
+            <img src="IA Logo.jpg" weight= height="10px" alt="Logo Inteligencia Artificial" id="logo-ia">
+        </div>
+        <h1>SISTEMAS Y MODELOS DE INTELIGENCIA ARTIFICIAL</h1>
+        <div id="info">Desde el IES Condesa Eylo</div>
+        <div id="aviso">NOS GUSTA LA IA</div>
+        <canvas id="pjsCanvas">Reloj digital en Processing</canvas>
+    </header>
+
+    <nav id="menuhorizontal">
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Inteligencia_artificial" target="_blank">Conceptos Clave</a></li>
+            <li><a href="https://www.ibm.com/es-es/topics/artificial-intelligence" target="_blank">Clasificación</a></li>
+            <li><a href="https://www.computerhistory.org/aitimeeline/" target="_blank">Historia</a></li>
+            <li><a href="https://www.un.org/en/observances/ai-for-good" target="_blank">Aplicaciones</a></li>
+            <li><a href="https://www.tensorflow.org/" target="_blank">Arquitecturas</a></li>
+            <li><a href="https://oecd.ai/en/" target="_blank">Desafíos Futuros</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menú desplegable "Secciones IA" con enlaces funcionales -->
+    <nav id="menuD">
+        <ul>
+            <li>Secciones IA
+                <ul>
+                    <li><a href="htmlcincoycss.pdf" target="_blank">PDF Teórico</a></li>
+                    <li> Submenú IA
+                        <ul>
+                            <li><a href="https://www.google.es" target="_blank">Buscador</a></li>
+                            <li><a href="https://arxiv.org/list/cs.AI/recent" target="_blank">Papers IA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.ieee.org" target="_blank">Referencias</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <p>Bienvenido al portal divulgativo sobre Inteligencia Artificial del Departamento de Tecnología del IES Condesa Eylo.</p>
+        </section>
+
+        <section id="galeria-encabezado">
+            <h2>Visión General de la Infraestructura</h2>
+            <figure style="text-align: center;">
+                <img src="esquema ia.jpg" alt="Esquema conceptual de la Inteligencia Artificial" border="1" width="500">
+                <figcaption>Esquema integral de interconexiones y ramas principales de la IA moderna.</figcaption>
+            </figure>
+        </section>
+
+        <section id="conceptos">
+            <h2>Apartado 1: Definiciones de Vocablos sobre IA</h2>
+            <ul>
+                <li><b>Inteligencia Artificial:</b> Simulación de procesos cognitivos humanos mediante algoritmos y sistemas computacionales.</li>
+                <li><i>Machine Learning:</i> Aprendizaje automático basado en el análisis predictivo y estadístico de datos.</li>
+                <li><strong>Deep Learning:</strong> Redes neuronales profundas diseñadas para la extracción compleja de patrones.</li>
+                <li><mark>Red Neuronal:</mark> Modelo computacional inspirado en la estructura y funcionamiento del cerebro biológico.</li>
+            </ul>
+        </section>
+
+        <section id="clasificacion">
+            <h2>Apartado 2: Clasificación de Tipos de IA</h2>
+            <ul>
+                <li><b>IA Débil o Estrecha:</b> Sistemas optimizados para resolver tareas específicas y delimitadas.</li>
+                <li><i>IA General (AGI):</i> Inteligencia teórica equivalente a la flexibilidad cognitiva humana en cualquier ámbito.</li>
+                <li><strong>Superinteligencia:</strong> Sistemas hipotéticos que superan globalmente el coeficiente intelectual y creativo humano.</li>
+                <li><mark>Máquinas Reactivas e IA de Memoria Limitada:</mark> Clasificación según su capacidad de almacenamiento y respuesta contextual.</li>
+            </ul>
+        </section>
+
+        <section id="historia">
+            <h2>Apartado 3: Hitos en la Historia de la IA</h2>
+            <ol>
+                <li><b>1950:</b> Alan Turing propone el Test de Turing para evaluar la cognición en máquinas.</li>
+                <li><i>1956:</i> Conferencia de Dartmouth y acuñación oficial del término "Inteligencia Artificial".</li>
+                <li><strong>1997:</strong> La supercomputadora Deep Blue de IBM vence al campeón mundial Garry Kasparov.</li>
+                <li><mark>2020+:</mark> Auge masivo de los modelos generativos del lenguaje, visión por computador y Big Data.</li>
+            </ol>
+        </section>
+
+        <section id="aplicaciones">
+            <h2>Apartado 4: Aplicaciones Prácticas Actuales</h2>
+            <p id="puntodos">
+                La inteligencia artificial transforma sectores clave de la sociedad moderna. En el ámbito sanitario se emplea para el diagnóstico automatizado por imagen médica y el descubrimiento acelerado de nuevos fármacos. En el sector del transporte permite el desarrollo de vehículos autónomos y la optimización inteligente del tráfico urbano. Asimismo, en el sector financiero facilita la detección automatizada de fraudes y el análisis predictivo de mercados bursátiles a gran escala.
+            </p>
+        </section>
+
+        <section id="arquitecturas">
+            <h2>Apartado 5: Arquitecturas, Métricas y Hardware</h2>
+
+            <div style="float: right; margin: 10px;">
+                <img src="redes ia.jpg" alt="Redes neuronales en entornos masivos" width="450">
+                <p><i>Procesamiento distribuido en nodos de IA.</i></p>
+            </div>
+
+            <div id="cajal">Área de procesamiento de modelos de IA</div>
+
+            <h3>Tabla 1: Comparativa de Modelos de Redes Neuronales</h3>
+            <table border="1" class="tabla1">
+                <caption>Clasificación de modelos por área de aplicación</caption>
+                <thead>
+                    <tr>
+                        <th>Modelo / Arquitectura</th>
+                        <th>Dominio Principal de Aplicación</th>
+                        <th>Tipo de Datos de Entrada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Redes Neuronales Convolucionales (CNN)</td>
+                        <td>Procesamiento de visión artificial y reconocimiento de imagen</td>
+                        <td>Matriz de píxeles / Imágenes 2D y 3D</td>
+                    </tr>
+                    <tr>
+                        <td>Redes Neuronales Recurrentes (RNN)</td>
+                        <td>Análisis de secuencias temporales y datos cronológicos</td>
+                        <td>Series temporales / Texto secuencial</td>
+                    </tr>
+                    <tr>
+                        <td>Transformers</td>
+                        <td>Modelado del lenguaje natural (LLMs) y generación multimodal</td>
+                        <td>Tokens de texto / Embeddings de datos</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Tabla 2: Métricas de Evaluación de Modelos</h3>
+            <table border="1">
+                <caption>Indicadores estadísticos de rendimiento</caption>
+                <thead>
+                    <tr>
+                        <th>Métrica</th>
+                        <th>Fórmula / Concepto</th>
+                        <th>Interpretación Práctica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Precisión (Precision)</td>
+                        <td>Verdaderos Positivos / (Verdaderos Positivos + Falsos Positivos)</td>
+                        <td>Tasa de aciertos sobre predicciones positivas.</td>
+                    </tr>
+                    <tr>
+                        <td>Sensibilidad (Recall)</td>
+                        <td>Verdaderos Positivos / (Verdaderos Positivos + Falsos Negativos)</td>
+                        <td>Cobertura total de muestras reales identificadas.</td>
+                    </tr>
+                    <tr>
+                        <td>Exactitud (Accuracy)</td>
+                        <td>Predicciones Correctas / Total de Muestras</td>
+                        <td>Porcentaje global de aciertos del sistema.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Tabla 3: Arquitecturas Avanzadas Combinadas</h3>
+            <table border="1">
+                <caption>Estructura interna del modelo Transformer</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Arquitectura Transformer para Modelos Generativos de Lenguaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Capas de Atención (Self-Attention)</td>
+                        <td>Codificador (Encoder)</td>
+                        <td>Decodificador (Decoder)</td>
+                    </tr>
+                    <tr>
+                        <td>Embedding vectorial y posicional</td>
+                        <td>Función Softmax y salida de probabilidad</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Listados Técnicos de Soporte e Infraestructura</h3>
+            
+            <h4>Componentes de Hardware Principales</h4>
+            <ol>
+                <li>Unidades de Procesamiento Tensorial (TPU) optimizadas para operaciones matriciales.</li>
+                <li>Unidades de Procesamiento Gráfico (GPU) de alto rendimiento masivo en paralelo.</li>
+                <li>Almacenamiento masivo de alta velocidad para conjuntos de datos (Big Data).</li>
+            </ol>
+
+            <h4>Fases de Entrenamiento</h4>
+            <ol type="1">
+                <li>Recopilación, limpieza, filtrado y etiquetado de bases de datos.</li>
+                <li>Entrenamiento del modelo, ajuste de hiperparámetros y validación cruzada.</li>
+                <li>Despliegue e inferencia en tiempo real.</li>
+            </ol>
+
+            <h4>Métricas de Evaluación</h4>
+            <ol type="a">
+                <li>Precisión (Accuracy) y recuperación de datos relevantes.</li>
+                <li>Margen de error y optimización de funciones de pérdida (Loss Function).</li>
+            </ol>
+
+            <h4>Niveles de Autonomía de Sistemas</h4>
+            <ol type="i">
+                <li>Asistencia automatizada supervisada por operadores humanos.</li>
+                <li>Autonomía condicional en entornos controlados y predecibles.</li>
+                <li value="5">Autonomía total y toma de decisiones descentralizada.</li>
+                <li>Capacidad de autoaprendizaje y adaptación evolutiva continua.</li>
+            </ol>
+        </section>
+
+        <section id="desafios">
+            <h2>Apartado 6: Futuro e Inconvenientes de la IA</h2>
+            
+            <h3>Riesgos Éticos y Sociales</h3>
+            <ul>
+                <li><strong>Riesgo 1:</strong> Desplazamiento laboral por automatización de tareas rutinarias.</li>
+                <li><strong>Riesgo 2:</strong> Sesgos algorítmicos y problemas éticos en la toma de decisiones automatizada.</li>
+            </ul>
+
+            <h3>Desafíos Tecnológicos</h3>
+            <ul>
+                <li type="square">Pérdida de privacidad ante el rastreo masivo de datos personales.</li>
+                <li type="square">Vulnerabilidades de ciberseguridad y ataques automatizados a modelos.</li>
+                <li type="square">Dependencia tecnológica crítica en infraestructuras vitales.</li>
+            </ul>
+
+            <h3>Ramas Técnicas de Desarrollo</h3>
+            <ul>
+                <li type="circle">Procesamiento del Lenguaje Natural (PLN).</li>
+                <li type="circle">Visión artificial para reconocimiento de objetos en tiempo real.</li>
+                <li type="circle">Robótica avanzada y sistemas autónomos adaptativos.</li>
+            </ul>
+
+            <h3>Entornos de Ejecución</h3>
+            <ul>
+                <li type="disc">Sistemas de procesamiento en la nube (Cloud AI).</li>
+                <li type="disc">Edge Computing para procesamiento en dispositivos locales.</li>
+                <li type="disc">Unidades hardware especializadas (GPU/TPU/NPU).</li>
+            </ul>
+
+            <h3>Simbología Representativa</h3>
+            <ul>
+                <li>🧠 Redes Neuronales Profundas</li>
+                <li>💻 Algoritmos de Aprendizaje Autónomo</li>
+            </ul>
+        </section>
+
+        <section id="multimedia">
+            <h2>Apartado 7: Recursos Multimedia y Centros de Supercomputación</h2>
+            
+            <h3>Divulgación Tecnológica (Video Integrado)</h3>
+            <div style="text-align: center;">
+                <p>Vídeo explicativo integrado sobre Inteligencia Artificial y Redes Neuronales:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aircAruvnKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br>
+                <p><strong>Enlace a vídeo externo complementario:</strong> <a href="https://www.youtube.com/watch?v=IHZwWFHWa-w" target="_blank">Haz clic aquí para ver el documental externo sobre el impacto de la IA en la sociedad</a></p>
+            </div>
+
+            <h3>Localización del Centro Tecnológico (Barcelona Supercomputing Center)</h3>
+            <div style="text-align: center; margin-top: 20px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.836!2d2.112!3d41.388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49883d6a8a37f%3A0x8e831201990c74fb!2sBarcelona%20Supercomputing%20Center!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </section>
+
+        <section id="documentacion">
+            <h2>Documentación Externa y Enlaces Útiles</h2>
+            <ul>
+                <li><a href="https://www.google.es" target="_blank">Buscar documentación general sobre IA (Misma pestaña)</a></li>
+                <li><a href="https://arxiv.org/list/cs.AI/recent" target="_blank">Buscar papers científicos en arXiv (Nueva pestaña)</a></li>
+                <li><a href="htmlcincoycss.pdf" download>Descargar especificaciones técnicas (PDF)</a></li>
+                <li><a href="#puntodos">Retornar al inicio de las Aplicaciones Prácticas</a></li>
+                <li><a href="#inicio">Volver al inicio de la página</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Departamento de Tecnología e Inteligencia Artificial - IES Condesa Eylo</p>
+    </footer>
+
+</body>
+</html>

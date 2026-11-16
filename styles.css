@@ -1,0 +1,152 @@
+CSS
+/* ==========================================
+   ESTILOS FUTURISTAS / CYBERPUNK - CSS
+   ========================================== */
+
+header {
+    color: #00f0ff;
+    background-color: #0d1117;
+    border-bottom: 2px solid #00f0ff;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    padding: 20px;
+}
+
+body {
+    color: #e2e8f0;
+    background-color: #07090e;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p { 
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 18px;
+    color: #94a3b8;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+footer {
+    color: #00f0ff;
+    background-color: #0d1117;
+    border-top: 1px solid rgba(0, 240, 255, 0.3);
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    padding: 15px;
+}
+
+.vamosaensayar {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #00f0ff;
+    text-align: center;
+    text-decoration: underline wavy #ff007f;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.8), 0 0 15px rgba(255, 0, 127, 0.5);
+    line-height: 1.8;
+}
+
+/* --- MENÚ HORIZONTAL --- */
+#menuhorizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #00f0ff;
+    background-color: #0f172a;
+}
+
+#menuhorizontal ul li {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #1e1b4b;
+    color: #00f0ff;
+    border: 1px solid #4338ca;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#menuhorizontal ul li:hover {
+    background-color: #00f0ff;
+    color: #07090e;
+    box-shadow: 0 0 12px #00f0ff;
+    cursor: pointer;
+}
+
+#menuhorizontal ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- MENÚ DESPLEGABLE (MENU D) --- */
+#menuD {
+    margin: 15px 0;
+}
+
+#menuD a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menuD ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menuD ul li {
+    width: 120px;
+    height: 30px;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 4px;
+    background-color: #1e1b4b;
+    color: #00f0ff;
+    border: 1px solid #4338ca;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#menuD ul li:hover {
+    background-color: #ff007f;
+    color: #ffffff;
+    border-color: #ff007f;
+    box-shadow: 0 0 10px #ff007f;
+}
+
+#menuD li > ul {
+    display: none;
+}
+
+#menuD li:hover > ul {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+}
+
+#menuD ul > li:hover > ul {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
